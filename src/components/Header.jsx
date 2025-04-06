@@ -5,7 +5,7 @@ function Header() {
   return (
     <header className="header">
       <div className="container">
-        <img src="./img/logo/logo.png" alt="DWEL logo" className="logo" />
+        <img src="./img/logo/logo_1.jpg" alt="DWEL logo" className="logo" />
         <nav className="menu">
           <a href="#!">Main</a>
           <a href="#!">About us</a>
