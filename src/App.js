@@ -7,7 +7,7 @@ import Modal from "./components/Modal";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App" class="bg-cyan-300">
       <Header />
       <Hero />
       <GridSection />
