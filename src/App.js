@@ -1,9 +1,9 @@
-import './App.css';
-import GridSection from './components/GridSection';
-import Header from './components/Header';
-import Hero from './components/Hero';
-import Footer from './components/Footer';
-import Modal from './components/Modal';
+import "./App.css";
+import GridSection from "./components/GridSection";
+import Header from "./components/Header";
+import Hero from "./components/Hero";
+import Footer from "./components/Footer";
+import Modal from "./components/Modal";
 
 function App() {
   return (
@@ -16,5 +16,5 @@ function App() {
     </div>
   );
 }
-
+// ldjghskj
 export default App;
