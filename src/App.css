@@ -1,0 +1,253 @@
+@charset "UTF-8";
+.roboto-light {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-light-italic {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-regular-italic {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-medium-italic {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.header {
+  display: grid;
+  text-transform: uppercase;
+  grid-template-columns: auto auto;
+  height: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  border-radius: 40px;
+  margin-bottom: 40px;
+  background: #c3c3c3;
+  box-shadow: 0 -3px 10px 3px rgba(0, 0, 0, 0.2);
+}
+.header .menu {
+  display: grid;
+  grid-template-columns: minmax(96px, 100px) minmax(43px, 50px);
+  justify-items: end;
+  text-decoration: none;
+}
+.header .menu a {
+  text-decoration: none;
+  color: #000000;
+}
+.header .menu a:hover {
+  cursor: pointer;
+  color: #e5e5e5;
+  transition: 0.2s;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 120px;
+  background: #c3c3c3;
+  border-radius: 40px;
+  height: 150px;
+  padding: 0 40px;
+  box-shadow: 0 -3px 10px 3px rgba(0, 0, 0, 0.2);
+}
+.footer .footer__text .DWEL {
+  margin-bottom: 10px;
+}
+
+.footer__options {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 50px;
+}
+.footer__options .options_1,
+.footer__options .options_3,
+.footer__options .options_2 {
+  display: flex;
+  flex-direction: column;
+}
+.footer__options .text_ {
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: #000000;
+}
+.footer__options .text_:hover {
+  cursor: pointer;
+  color: #e5e5e5;
+  transition: 0.2s;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 1440px;
+  margin: 0 auto;
+  font-family: Roboto, serif;
+}
+.container .wrapper {
+  width: 1320px;
+  background: #e5e5e5;
+  padding: 40px 60px;
+  display: grid;
+  align-items: center;
+}
+
+.media__film {
+  margin: 0 auto;
+}
+.media__film:hover {
+  cursor: pointer;
+  scale: 1.03;
+  transition: 0.4s;
+  opacity: 0.9;
+  box-shadow: 0 -3px 10px 3px rgba(0, 0, 0, 0.2);
+}
+.media__film img {
+  height: 500px;
+}
+
+.grid_block_project {
+  font-style: italic;
+  text-align: center;
+  font-size: 24px;
+  margin: 10px 0 30px;
+}
+@media (max-width: 560px) {
+  .grid_block_project {
+    font-size: 3rem;
+  }
+}
+
+.grid {
+  margin-top: 80px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  /* Небольшие отступы между постами */
+  grid-gap: 1em;
+}
+@media (max-width: 780px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 560px) {
+  .grid {
+    grid-template-columns: repeat(1, 1fr);
+    display: grid;
+    justify-items: center;
+  }
+}
+.grid .grid_block img {
+  border-radius: 40px;
+}
+.grid .grid_block img:hover {
+  cursor: pointer;
+  scale: 1.03;
+  transition: 0.4s;
+  opacity: 0.9;
+  box-shadow: 0 -3px 10px 3px rgba(0, 0, 0, 0.2);
+}
+.grid .grid_block .grid_text {
+  font-style: italic;
+  text-align: center;
+  font-size: 24px;
+  margin: 10px 0 30px;
+}
+@media (max-width: 560px) {
+  .grid .grid_block .grid_text {
+    font-size: 3rem;
+  }
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  -webkit-animation-name: animatetop;
+  animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-duration: 0.4s;
+}
+
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0;
+  }
+  to {
+    top: 0;
+    opacity: 1;
+  }
+}
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
