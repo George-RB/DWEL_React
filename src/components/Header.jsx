@@ -1,11 +1,11 @@
-import React from "react";
-import "./Header.css";
+import React from 'react';
+// import './Header.css';
 
 function Header() {
   return (
-    <header className="header" class="bg-slate-300">
-      <div className="container">
-        <img src="./img/logo/logo_1.jpg" alt="DWEL logo" className="logo" />
+    <header className="header" class="bg-slate-300 max-w-6xl ">
+      <div className="container" class="flex justify-center">
+        {/* <img src="./img/logo/logo_1.jpg" alt="DWEL logo" className="logo" /> */}
         <nav className="menu">
           <a href="#!">Main</a>
           <a href="#!">About us</a>

@@ -1,13 +1,13 @@
-import "./App.css";
-import GridSection from "./components/GridSection";
-import Header from "./components/Header";
-import Hero from "./components/Hero";
-import Footer from "./components/Footer";
-import Modal from "./components/Modal";
+// import './App.css';
+import GridSection from './components/GridSection';
+import Header from './components/Header';
+import Hero from './components/Hero';
+import Footer from './components/Footer';
+import Modal from './components/Modal';
 
 function App() {
   return (
-    <div className="App" class="bg-cyan-300">
+    <div className="App" class="mx-auto max-w-7xl bg-gray-200">
       <Header />
       <Hero />
       <GridSection />
