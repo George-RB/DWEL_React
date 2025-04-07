@@ -1,47 +1,47 @@
-/* Header */
+/* Стили для шапки */
 .header {
-  background-color: #333;
-  color: white;
-  padding: 20px 0;
+  display: flex; /* Используем flexbox для выравнивания */
+  justify-content: space-between; /* Пространство между логотипом и меню */
+  align-items: center; /* Вертикальное выравнивание элементов */
+  height: 100%; /* Заполняет доступную высоту */
+  padding: 0 40px; /* Отступы по бокам */
+  background: #c3c3c3; /* Цвет фона */
+  border-radius: 40px; /* Скругление углов */
+  box-shadow: 0 -3px 10px 3px rgba(0, 0, 0, 0.2); /* Тень снизу */
 }
 
-.logo {
-  width: 150px;
+.header .logo {
+  max-height: 50px; /* Максимальная высота логотипа */
+  object-fit: contain; /* Логотип сохраняет пропорции */
 }
 
-.menu {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.header .menu {
+  display: flex; /* Используем flexbox для меню */
+  gap: 20px; /* Расстояние между элементами меню */
 }
 
-.menu a {
-  color: white;
-  text-decoration: none;
-  margin-right: 20px;
+.header .menu a {
+  text-decoration: none; /* Убираем подчеркивание */
+  color: #000000; /* Цвет текста */
+  font-weight: 500; /* Средний жирный шрифт */
 }
 
-.menu a:hover {
-  text-decoration: underline;
+.header .menu a:hover {
+  cursor: pointer; /* Курсор при наведении */
+  color: #e5e5e5; /* Цвет при наведении */
+  transition: 0.2s; /* Плавный переход */
 }
 
-.btn-register {
-  padding: 10px 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  cursor: pointer;
+.header .btn-register {
+  padding: 10px 20px; /* Отступы для кнопки */
+  background-color: #007bff; /* Цвет фона кнопки */
+  color: white; /* Цвет текста */
+  border: none; /* Без рамки */
+  border-radius: 5px; /* Скругленные углы */
+  cursor: pointer; /* Курсор при наведении */
 }
 
-.btn-register:hover {
-  background-color: #0056b3;
-}
-
-/* Для контейнера */
-.container {
-  width: 90%;
-  margin: 0 auto;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+.header .btn-register:hover {
+  background-color: #0056b3; /* Цвет кнопки при наведении */
+  transition: background-color 0.2s; /* Плавное изменение цвета */
 }
